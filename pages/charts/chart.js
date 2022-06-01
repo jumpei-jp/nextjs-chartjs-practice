@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PieChart from "../components/PieChart"
+import LineChart from "../components/LineChart"
 import { UserData } from '../Data'
 
 function Chart() {
@@ -23,8 +24,11 @@ function Chart() {
 
   return(
     <div className="App">
-      <div style={{width: 700}}>
+      {/* <div style={{width: 700}}>
         <PieChart chartData={userData} />
+      </div> */}
+      <div style={{width: 700}}>
+        <LineChart chartData={userData} />
       </div>
     </div>
   )
